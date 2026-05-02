@@ -1,7 +1,7 @@
 import { MongoClient, Db } from 'mongodb';
 
-const uri = process.env.MONGODB_URI || 'mongodb://localhost:27017';
-const dbName = process.env.MONGODB_DB || 'zrkx_studios';
+const uri = process.env.MONGODB_URI!;
+const dbName = process.env.MONGODB_DB || 'zrkx';
 
 let cachedClient: MongoClient | null = null;
 let cachedDb: Db | null = null;
